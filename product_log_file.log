@@ -1,0 +1,342 @@
+[32m2023-11-18 17:23:18.420[0;39m [INFO] com.hexaware.ecommerce.EcommerceProjectApplication [main] Starting EcommerceProjectApplication using Java 17.0.8.1 with PID 10960 (G:\hexa\ecommerce-project\target\classes started by MY in G:\hexa\ecommerce-project)
+[32m2023-11-18 17:23:18.456[0;39m [INFO] com.hexaware.ecommerce.EcommerceProjectApplication [main] No active profile set, falling back to 1 default profile: "default"
+[32m2023-11-18 17:23:21.814[0;39m [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[32m2023-11-18 17:23:22.074[0;39m [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 237 ms. Found 8 JPA repository interfaces.
+[32m2023-11-18 17:23:23.839[0;39m [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8181 (http)
+[32m2023-11-18 17:23:23.864[0;39m [INFO] org.apache.catalina.core.StandardService [main] Starting service [Tomcat]
+[32m2023-11-18 17:23:23.865[0;39m [INFO] org.apache.catalina.core.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/10.1.15]
+[32m2023-11-18 17:23:24.292[0;39m [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [main] Initializing Spring embedded WebApplicationContext
+[32m2023-11-18 17:23:24.293[0;39m [INFO] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 5650 ms
+[32m2023-11-18 17:23:24.938[0;39m [INFO] org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+[32m2023-11-18 17:23:25.112[0;39m [INFO] org.hibernate.Version [main] HHH000412: Hibernate ORM core version 6.2.13.Final
+[32m2023-11-18 17:23:25.121[0;39m [INFO] org.hibernate.cfg.Environment [main] HHH000406: Using bytecode reflection optimizer
+[32m2023-11-18 17:23:25.976[0;39m [INFO] org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo [main] No LoadTimeWeaver setup: ignoring JPA class transformer
+[32m2023-11-18 17:23:26.070[0;39m [INFO] com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+[32m2023-11-18 17:23:27.007[0;39m [INFO] com.zaxxer.hikari.pool.HikariPool [main] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5a9051fd
+[32m2023-11-18 17:23:27.012[0;39m [INFO] com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+[32m2023-11-18 17:23:30.681[0;39m [INFO] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[32m2023-11-18 17:23:30.885[0;39m [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+[32m2023-11-18 17:23:32.372[0;39m [WARN] org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext [main] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'adminRestController': Unsatisfied dependency expressed through field 'service': Error creating bean with name 'adminServiceImp': Unsatisfied dependency expressed through field 'restTemplate': No qualifying bean of type 'org.springframework.web.client.RestTemplate' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+[32m2023-11-18 17:23:32.379[0;39m [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [main] Closing JPA EntityManagerFactory for persistence unit 'default'
+[32m2023-11-18 17:23:32.387[0;39m [INFO] com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Shutdown initiated...
+[32m2023-11-18 17:23:32.433[0;39m [INFO] com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Shutdown completed.
+[32m2023-11-18 17:23:32.438[0;39m [INFO] org.apache.catalina.core.StandardService [main] Stopping service [Tomcat]
+[32m2023-11-18 17:23:32.508[0;39m [INFO] org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLogger [main] 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+[32m2023-11-18 17:23:32.656[0;39m [ERROR] org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter [main] 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field restTemplate in com.hexaware.ecommerce.service.AdminServiceImp required a bean of type 'org.springframework.web.client.RestTemplate' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'org.springframework.web.client.RestTemplate' in your configuration.
+
+[32m2023-11-18 17:29:41.401[0;39m [INFO] com.hexaware.ecommerce.EcommerceProjectApplication [main] Starting EcommerceProjectApplication using Java 17.0.8.1 with PID 5220 (G:\hexa\ecommerce-project\target\classes started by MY in G:\hexa\ecommerce-project)
+[32m2023-11-18 17:29:41.408[0;39m [INFO] com.hexaware.ecommerce.EcommerceProjectApplication [main] No active profile set, falling back to 1 default profile: "default"
+[32m2023-11-18 17:29:44.918[0;39m [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[32m2023-11-18 17:29:45.260[0;39m [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 275 ms. Found 8 JPA repository interfaces.
+[32m2023-11-18 17:29:46.679[0;39m [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8181 (http)
+[32m2023-11-18 17:29:46.698[0;39m [INFO] org.apache.catalina.core.StandardService [main] Starting service [Tomcat]
+[32m2023-11-18 17:29:46.699[0;39m [INFO] org.apache.catalina.core.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/10.1.15]
+[32m2023-11-18 17:29:46.980[0;39m [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [main] Initializing Spring embedded WebApplicationContext
+[32m2023-11-18 17:29:46.981[0;39m [INFO] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 5427 ms
+[32m2023-11-18 17:29:47.634[0;39m [INFO] org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+[32m2023-11-18 17:29:47.747[0;39m [INFO] org.hibernate.Version [main] HHH000412: Hibernate ORM core version 6.2.13.Final
+[32m2023-11-18 17:29:47.754[0;39m [INFO] org.hibernate.cfg.Environment [main] HHH000406: Using bytecode reflection optimizer
+[32m2023-11-18 17:29:48.480[0;39m [INFO] org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo [main] No LoadTimeWeaver setup: ignoring JPA class transformer
+[32m2023-11-18 17:29:48.616[0;39m [INFO] com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+[32m2023-11-18 17:29:49.863[0;39m [INFO] com.zaxxer.hikari.pool.HikariPool [main] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5a4b8e25
+[32m2023-11-18 17:29:49.871[0;39m [INFO] com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+[32m2023-11-18 17:29:53.716[0;39m [INFO] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[32m2023-11-18 17:29:53.886[0;39m [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+[32m2023-11-18 17:29:55.183[0;39m [WARN] org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext [main] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'adminRestController': Unsatisfied dependency expressed through field 'service': Error creating bean with name 'adminServiceImp': Unsatisfied dependency expressed through field 'restTemplate': No qualifying bean of type 'org.springframework.web.client.RestTemplate' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+[32m2023-11-18 17:29:55.185[0;39m [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [main] Closing JPA EntityManagerFactory for persistence unit 'default'
+[32m2023-11-18 17:29:55.192[0;39m [INFO] com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Shutdown initiated...
+[32m2023-11-18 17:29:55.224[0;39m [INFO] com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Shutdown completed.
+[32m2023-11-18 17:29:55.229[0;39m [INFO] org.apache.catalina.core.StandardService [main] Stopping service [Tomcat]
+[32m2023-11-18 17:29:55.308[0;39m [INFO] org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLogger [main] 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+[32m2023-11-18 17:29:55.509[0;39m [ERROR] org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter [main] 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field restTemplate in com.hexaware.ecommerce.service.AdminServiceImp required a bean of type 'org.springframework.web.client.RestTemplate' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'org.springframework.web.client.RestTemplate' in your configuration.
+
+[32m2023-11-18 17:34:21.152[0;39m [INFO] com.hexaware.ecommerce.EcommerceProjectApplication [main] Starting EcommerceProjectApplication using Java 17.0.8.1 with PID 12316 (G:\hexa\ecommerce-project\target\classes started by MY in G:\hexa\ecommerce-project)
+[32m2023-11-18 17:34:21.160[0;39m [INFO] com.hexaware.ecommerce.EcommerceProjectApplication [main] No active profile set, falling back to 1 default profile: "default"
+[32m2023-11-18 17:34:24.267[0;39m [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[32m2023-11-18 17:34:24.505[0;39m [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 212 ms. Found 8 JPA repository interfaces.
+[32m2023-11-18 17:34:25.996[0;39m [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8181 (http)
+[32m2023-11-18 17:34:26.027[0;39m [INFO] org.apache.catalina.core.StandardService [main] Starting service [Tomcat]
+[32m2023-11-18 17:34:26.029[0;39m [INFO] org.apache.catalina.core.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/10.1.15]
+[32m2023-11-18 17:34:26.393[0;39m [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [main] Initializing Spring embedded WebApplicationContext
+[32m2023-11-18 17:34:26.394[0;39m [INFO] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 5087 ms
+[32m2023-11-18 17:34:27.031[0;39m [INFO] org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+[32m2023-11-18 17:34:27.158[0;39m [INFO] org.hibernate.Version [main] HHH000412: Hibernate ORM core version 6.2.13.Final
+[32m2023-11-18 17:34:27.165[0;39m [INFO] org.hibernate.cfg.Environment [main] HHH000406: Using bytecode reflection optimizer
+[32m2023-11-18 17:34:28.218[0;39m [INFO] org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo [main] No LoadTimeWeaver setup: ignoring JPA class transformer
+[32m2023-11-18 17:34:28.336[0;39m [INFO] com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+[32m2023-11-18 17:34:29.404[0;39m [INFO] com.zaxxer.hikari.pool.HikariPool [main] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5ba63110
+[32m2023-11-18 17:34:29.410[0;39m [INFO] com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+[32m2023-11-18 17:34:32.537[0;39m [INFO] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[32m2023-11-18 17:34:32.781[0;39m [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+[32m2023-11-18 17:34:34.152[0;39m [WARN] org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext [main] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'adminRestController': Unsatisfied dependency expressed through field 'service': Error creating bean with name 'adminServiceImp': Unsatisfied dependency expressed through field 'restTemplate': No qualifying bean of type 'org.springframework.web.client.RestTemplate' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+[32m2023-11-18 17:34:34.154[0;39m [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [main] Closing JPA EntityManagerFactory for persistence unit 'default'
+[32m2023-11-18 17:34:34.160[0;39m [INFO] com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Shutdown initiated...
+[32m2023-11-18 17:34:34.189[0;39m [INFO] com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Shutdown completed.
+[32m2023-11-18 17:34:34.194[0;39m [INFO] org.apache.catalina.core.StandardService [main] Stopping service [Tomcat]
+[32m2023-11-18 17:34:34.253[0;39m [INFO] org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLogger [main] 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+[32m2023-11-18 17:34:34.384[0;39m [ERROR] org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter [main] 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field restTemplate in com.hexaware.ecommerce.service.AdminServiceImp required a bean of type 'org.springframework.web.client.RestTemplate' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'org.springframework.web.client.RestTemplate' in your configuration.
+
+[32m2023-11-18 17:42:58.831[0;39m [INFO] com.hexaware.ecommerce.EcommerceProjectApplication [main] Starting EcommerceProjectApplication using Java 17.0.8.1 with PID 9936 (G:\hexa\ecommerce-project\target\classes started by MY in G:\hexa\ecommerce-project)
+[32m2023-11-18 17:42:58.838[0;39m [INFO] com.hexaware.ecommerce.EcommerceProjectApplication [main] No active profile set, falling back to 1 default profile: "default"
+[32m2023-11-18 17:43:02.216[0;39m [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[32m2023-11-18 17:43:02.389[0;39m [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 144 ms. Found 8 JPA repository interfaces.
+[32m2023-11-18 17:43:04.193[0;39m [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8181 (http)
+[32m2023-11-18 17:43:04.226[0;39m [INFO] org.apache.catalina.core.StandardService [main] Starting service [Tomcat]
+[32m2023-11-18 17:43:04.228[0;39m [INFO] org.apache.catalina.core.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/10.1.15]
+[32m2023-11-18 17:43:04.634[0;39m [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [main] Initializing Spring embedded WebApplicationContext
+[32m2023-11-18 17:43:04.635[0;39m [INFO] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 5551 ms
+[32m2023-11-18 17:43:05.285[0;39m [INFO] org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+[32m2023-11-18 17:43:05.477[0;39m [INFO] org.hibernate.Version [main] HHH000412: Hibernate ORM core version 6.2.13.Final
+[32m2023-11-18 17:43:05.483[0;39m [INFO] org.hibernate.cfg.Environment [main] HHH000406: Using bytecode reflection optimizer
+[32m2023-11-18 17:43:06.222[0;39m [INFO] org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo [main] No LoadTimeWeaver setup: ignoring JPA class transformer
+[32m2023-11-18 17:43:06.280[0;39m [INFO] com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+[32m2023-11-18 17:43:07.108[0;39m [INFO] com.zaxxer.hikari.pool.HikariPool [main] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4aa517c3
+[32m2023-11-18 17:43:07.115[0;39m [INFO] com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+[32m2023-11-18 17:43:10.470[0;39m [INFO] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[32m2023-11-18 17:43:10.636[0;39m [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+[32m2023-11-18 17:43:13.059[0;39m [WARN] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[32m2023-11-18 17:43:14.373[0;39m [INFO] org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [main] Exposing 1 endpoint(s) beneath base path '/actuator'
+[32m2023-11-18 17:43:14.643[0;39m [INFO] org.springframework.security.web.DefaultSecurityFilterChain [main] Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@1dcfbad1, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@19e5e846, org.springframework.security.web.context.SecurityContextHolderFilter@65134e6c, org.springframework.security.web.header.HeaderWriterFilter@5b7600ec, org.springframework.security.web.authentication.logout.LogoutFilter@7d90d4c6, com.hexaware.ecommerce.filter.JwtAuthFilter@3dfe2797, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@32ff3c98, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@201f0e84, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@12418d3f, org.springframework.security.web.session.SessionManagementFilter@3edc999f, org.springframework.security.web.access.ExceptionTranslationFilter@2be89ba5, org.springframework.security.web.access.intercept.AuthorizationFilter@71077d1]
+[32m2023-11-18 17:43:16.051[0;39m [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8181 (http) with context path ''
+[32m2023-11-18 17:43:16.130[0;39m [INFO] com.hexaware.ecommerce.EcommerceProjectApplication [main] Started EcommerceProjectApplication in 18.492 seconds (process running for 20.614)
+[32m2023-11-18 17:43:18.032[0;39m [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [RMI TCP Connection(3)-127.0.0.1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+[32m2023-11-18 17:43:18.033[0;39m [INFO] org.springframework.web.servlet.DispatcherServlet [RMI TCP Connection(3)-127.0.0.1] Initializing Servlet 'dispatcherServlet'
+[32m2023-11-18 17:43:18.038[0;39m [INFO] org.springframework.web.servlet.DispatcherServlet [RMI TCP Connection(3)-127.0.0.1] Completed initialization in 5 ms
+[32m2023-11-18 17:43:39.590[0;39m [INFO] org.springdoc.api.AbstractOpenApiResource [http-nio-8181-exec-2] Init duration for springdoc-openapi is: 1833 ms
+[32m2023-11-18 17:56:46.651[0;39m [INFO] com.hexaware.ecommerce.EcommerceProjectApplication [main] Starting EcommerceProjectApplication using Java 17.0.8.1 with PID 17212 (G:\hexa\ecommerce-project\target\classes started by MY in G:\hexa\ecommerce-project)
+[32m2023-11-18 17:56:46.662[0;39m [INFO] com.hexaware.ecommerce.EcommerceProjectApplication [main] No active profile set, falling back to 1 default profile: "default"
+[32m2023-11-18 17:56:53.833[0;39m [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[32m2023-11-18 17:56:54.174[0;39m [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 306 ms. Found 8 JPA repository interfaces.
+[32m2023-11-18 17:56:57.549[0;39m [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8181 (http)
+[32m2023-11-18 17:56:57.590[0;39m [INFO] org.apache.catalina.core.StandardService [main] Starting service [Tomcat]
+[32m2023-11-18 17:56:57.593[0;39m [INFO] org.apache.catalina.core.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/10.1.15]
+[32m2023-11-18 17:56:58.252[0;39m [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [main] Initializing Spring embedded WebApplicationContext
+[32m2023-11-18 17:56:58.254[0;39m [INFO] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 11098 ms
+[32m2023-11-18 17:56:59.545[0;39m [INFO] org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+[32m2023-11-18 17:56:59.788[0;39m [INFO] org.hibernate.Version [main] HHH000412: Hibernate ORM core version 6.2.13.Final
+[32m2023-11-18 17:56:59.798[0;39m [INFO] org.hibernate.cfg.Environment [main] HHH000406: Using bytecode reflection optimizer
+[32m2023-11-18 17:57:01.149[0;39m [INFO] org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo [main] No LoadTimeWeaver setup: ignoring JPA class transformer
+[32m2023-11-18 17:57:01.273[0;39m [INFO] com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+[32m2023-11-18 17:57:03.213[0;39m [INFO] com.zaxxer.hikari.pool.HikariPool [main] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4e79c25
+[32m2023-11-18 17:57:03.220[0;39m [INFO] com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+[32m2023-11-18 17:57:09.748[0;39m [INFO] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[32m2023-11-18 17:57:09.985[0;39m [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+[32m2023-11-18 17:57:13.114[0;39m [WARN] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[32m2023-11-18 17:57:14.684[0;39m [INFO] org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [main] Exposing 1 endpoint(s) beneath base path '/actuator'
+[32m2023-11-18 17:57:14.906[0;39m [INFO] org.springframework.security.web.DefaultSecurityFilterChain [main] Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@1b6441c9, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6da6c10e, org.springframework.security.web.context.SecurityContextHolderFilter@7c48ea9e, org.springframework.security.web.header.HeaderWriterFilter@4271960c, org.springframework.security.web.authentication.logout.LogoutFilter@18ce7872, com.hexaware.ecommerce.filter.JwtAuthFilter@14ecd835, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@d833770, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@35ec9d29, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@485dfac9, org.springframework.security.web.session.SessionManagementFilter@54a1a6a8, org.springframework.security.web.access.ExceptionTranslationFilter@67441705, org.springframework.security.web.access.intercept.AuthorizationFilter@148c571c]
+[32m2023-11-18 17:57:17.286[0;39m [WARN] org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext [main] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+[32m2023-11-18 17:57:17.303[0;39m [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [main] Closing JPA EntityManagerFactory for persistence unit 'default'
+[32m2023-11-18 17:57:17.310[0;39m [INFO] com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Shutdown initiated...
+[32m2023-11-18 17:57:17.334[0;39m [INFO] com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Shutdown completed.
+[32m2023-11-18 17:57:17.339[0;39m [INFO] org.apache.catalina.core.StandardService [main] Stopping service [Tomcat]
+[32m2023-11-18 17:57:17.435[0;39m [INFO] org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLogger [main] 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+[32m2023-11-18 17:57:17.526[0;39m [ERROR] org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter [main] 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8181 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8181 or configure this application to listen on another port.
+
+[32m2023-11-18 17:58:37.549[0;39m [INFO] org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin [RMI TCP Connection(21)-127.0.0.1] Application shutdown requested.
+[32m2023-11-18 17:58:37.609[0;39m [INFO] org.apache.catalina.core.StandardService [RMI TCP Connection(21)-127.0.0.1] Stopping service [Tomcat]
+[32m2023-11-18 17:58:37.614[0;39m [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [RMI TCP Connection(21)-127.0.0.1] Destroying Spring FrameworkServlet 'dispatcherServlet'
+[32m2023-11-18 17:58:37.622[0;39m [WARN] org.apache.catalina.loader.WebappClassLoaderBase [RMI TCP Connection(21)-127.0.0.1] The web application [ROOT] appears to have started a thread named [HikariPool-1 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.8.1/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.8.1/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+ java.base@17.0.8.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1672)
+ java.base@17.0.8.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@17.0.8.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@17.0.8.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+ java.base@17.0.8.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+ java.base@17.0.8.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.8.1/java.lang.Thread.run(Thread.java:833)
+[32m2023-11-18 17:58:37.657[0;39m [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [RMI TCP Connection(21)-127.0.0.1] Closing JPA EntityManagerFactory for persistence unit 'default'
+[32m2023-11-18 17:58:37.665[0;39m [INFO] com.zaxxer.hikari.HikariDataSource [RMI TCP Connection(21)-127.0.0.1] HikariPool-1 - Shutdown initiated...
+[32m2023-11-18 17:58:37.733[0;39m [INFO] com.zaxxer.hikari.HikariDataSource [RMI TCP Connection(21)-127.0.0.1] HikariPool-1 - Shutdown completed.
+[32m2023-11-18 17:58:59.397[0;39m [INFO] com.hexaware.ecommerce.EcommerceProjectApplication [main] Starting EcommerceProjectApplication using Java 17.0.8.1 with PID 5492 (G:\hexa\ecommerce-project\target\classes started by MY in G:\hexa\ecommerce-project)
+[32m2023-11-18 17:58:59.433[0;39m [INFO] com.hexaware.ecommerce.EcommerceProjectApplication [main] No active profile set, falling back to 1 default profile: "default"
+[32m2023-11-18 17:59:00.399[0;39m [INFO] com.hexaware.ecommerce.EcommerceProjectApplication [main] Starting EcommerceProjectApplication using Java 17.0.8.1 with PID 9560 (G:\hexa\ecommerce-project\target\classes started by MY in G:\hexa\ecommerce-project)
+[32m2023-11-18 17:59:00.431[0;39m [INFO] com.hexaware.ecommerce.EcommerceProjectApplication [main] No active profile set, falling back to 1 default profile: "default"
+[32m2023-11-18 17:59:06.562[0;39m [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[32m2023-11-18 17:59:06.596[0;39m [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[32m2023-11-18 17:59:07.068[0;39m [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 455 ms. Found 8 JPA repository interfaces.
+[32m2023-11-18 17:59:07.215[0;39m [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 583 ms. Found 8 JPA repository interfaces.
+[32m2023-11-18 17:59:10.315[0;39m [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8181 (http)
+[32m2023-11-18 17:59:10.362[0;39m [INFO] org.apache.catalina.core.StandardService [main] Starting service [Tomcat]
+[32m2023-11-18 17:59:10.363[0;39m [INFO] org.apache.catalina.core.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/10.1.15]
+[32m2023-11-18 17:59:10.530[0;39m [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8181 (http)
+[32m2023-11-18 17:59:10.594[0;39m [INFO] org.apache.catalina.core.StandardService [main] Starting service [Tomcat]
+[32m2023-11-18 17:59:10.595[0;39m [INFO] org.apache.catalina.core.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/10.1.15]
+[32m2023-11-18 17:59:10.964[0;39m [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [main] Initializing Spring embedded WebApplicationContext
+[32m2023-11-18 17:59:10.966[0;39m [INFO] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 11200 ms
+[32m2023-11-18 17:59:11.176[0;39m [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [main] Initializing Spring embedded WebApplicationContext
+[32m2023-11-18 17:59:11.177[0;39m [INFO] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 10447 ms
+[32m2023-11-18 17:59:12.040[0;39m [INFO] org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+[32m2023-11-18 17:59:12.342[0;39m [INFO] org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+[32m2023-11-18 17:59:12.377[0;39m [INFO] org.hibernate.Version [main] HHH000412: Hibernate ORM core version 6.2.13.Final
+[32m2023-11-18 17:59:12.389[0;39m [INFO] org.hibernate.cfg.Environment [main] HHH000406: Using bytecode reflection optimizer
+[32m2023-11-18 17:59:12.635[0;39m [INFO] org.hibernate.Version [main] HHH000412: Hibernate ORM core version 6.2.13.Final
+[32m2023-11-18 17:59:12.650[0;39m [INFO] org.hibernate.cfg.Environment [main] HHH000406: Using bytecode reflection optimizer
+[32m2023-11-18 17:59:13.638[0;39m [INFO] org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo [main] No LoadTimeWeaver setup: ignoring JPA class transformer
+[32m2023-11-18 17:59:13.834[0;39m [INFO] com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+[32m2023-11-18 17:59:13.973[0;39m [INFO] org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo [main] No LoadTimeWeaver setup: ignoring JPA class transformer
+[32m2023-11-18 17:59:14.095[0;39m [INFO] com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+[32m2023-11-18 17:59:15.484[0;39m [INFO] com.zaxxer.hikari.pool.HikariPool [main] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7c840fe3
+[32m2023-11-18 17:59:15.491[0;39m [INFO] com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+[32m2023-11-18 17:59:15.855[0;39m [INFO] com.zaxxer.hikari.pool.HikariPool [main] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4aa517c3
+[32m2023-11-18 17:59:15.861[0;39m [INFO] com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+[32m2023-11-18 17:59:21.591[0;39m [INFO] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[32m2023-11-18 17:59:21.777[0;39m [INFO] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[32m2023-11-18 17:59:21.827[0;39m [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+[32m2023-11-18 17:59:22.071[0;39m [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+[32m2023-11-18 17:59:25.996[0;39m [WARN] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[32m2023-11-18 17:59:26.377[0;39m [WARN] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[32m2023-11-18 17:59:28.504[0;39m [INFO] org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [main] Exposing 1 endpoint(s) beneath base path '/actuator'
+[32m2023-11-18 17:59:28.846[0;39m [INFO] org.springframework.security.web.DefaultSecurityFilterChain [main] Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3695e4f2, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5bdfae42, org.springframework.security.web.context.SecurityContextHolderFilter@16a30d66, org.springframework.security.web.header.HeaderWriterFilter@3edc999f, org.springframework.security.web.authentication.logout.LogoutFilter@4cb641a5, com.hexaware.ecommerce.filter.JwtAuthFilter@32c114d9, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@c358f32, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@505e483f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4e396d1c, org.springframework.security.web.session.SessionManagementFilter@136c3a6, org.springframework.security.web.access.ExceptionTranslationFilter@1e250539, org.springframework.security.web.access.intercept.AuthorizationFilter@343b3399]
+[32m2023-11-18 17:59:28.894[0;39m [INFO] org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [main] Exposing 1 endpoint(s) beneath base path '/actuator'
+[32m2023-11-18 17:59:29.516[0;39m [INFO] org.springframework.security.web.DefaultSecurityFilterChain [main] Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@630a647c, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1dcfbad1, org.springframework.security.web.context.SecurityContextHolderFilter@3a8ae302, org.springframework.security.web.header.HeaderWriterFilter@408573b1, org.springframework.security.web.authentication.logout.LogoutFilter@3986b56, com.hexaware.ecommerce.filter.JwtAuthFilter@19ea65f4, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3fd93330, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5f804b36, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@19e5e846, org.springframework.security.web.session.SessionManagementFilter@5860e4c3, org.springframework.security.web.access.ExceptionTranslationFilter@7a3c541e, org.springframework.security.web.access.intercept.AuthorizationFilter@4cb641a5]
+[32m2023-11-18 17:59:31.215[0;39m [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8181 (http) with context path ''
+[32m2023-11-18 17:59:31.295[0;39m [INFO] com.hexaware.ecommerce.EcommerceProjectApplication [main] Started EcommerceProjectApplication in 34.185 seconds (process running for 39.386)
+[32m2023-11-18 17:59:31.524[0;39m [WARN] org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext [main] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+[32m2023-11-18 17:59:31.609[0;39m [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [main] Closing JPA EntityManagerFactory for persistence unit 'default'
+[32m2023-11-18 17:59:31.618[0;39m [INFO] com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Shutdown initiated...
+[32m2023-11-18 17:59:31.658[0;39m [INFO] com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Shutdown completed.
+[32m2023-11-18 17:59:31.664[0;39m [INFO] org.apache.catalina.core.StandardService [main] Stopping service [Tomcat]
+[32m2023-11-18 17:59:31.769[0;39m [INFO] org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLogger [main] 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+[32m2023-11-18 17:59:31.838[0;39m [ERROR] org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter [main] 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8181 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8181 or configure this application to listen on another port.
+
+[32m2023-11-18 17:59:36.726[0;39m [INFO] org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin [RMI TCP Connection(2)-127.0.0.1] Application shutdown requested.
+[32m2023-11-18 17:59:36.791[0;39m [INFO] org.apache.catalina.core.StandardService [RMI TCP Connection(2)-127.0.0.1] Stopping service [Tomcat]
+[32m2023-11-18 17:59:36.801[0;39m [WARN] org.apache.catalina.loader.WebappClassLoaderBase [RMI TCP Connection(2)-127.0.0.1] The web application [ROOT] appears to have started a thread named [HikariPool-1 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.8.1/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.8.1/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+ java.base@17.0.8.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1672)
+ java.base@17.0.8.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@17.0.8.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@17.0.8.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+ java.base@17.0.8.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+ java.base@17.0.8.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.8.1/java.lang.Thread.run(Thread.java:833)
+[32m2023-11-18 17:59:36.845[0;39m [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [RMI TCP Connection(2)-127.0.0.1] Closing JPA EntityManagerFactory for persistence unit 'default'
+[32m2023-11-18 17:59:36.855[0;39m [INFO] com.zaxxer.hikari.HikariDataSource [RMI TCP Connection(2)-127.0.0.1] HikariPool-1 - Shutdown initiated...
+[32m2023-11-18 17:59:36.903[0;39m [INFO] com.zaxxer.hikari.HikariDataSource [RMI TCP Connection(2)-127.0.0.1] HikariPool-1 - Shutdown completed.
+[32m2023-11-18 18:00:07.188[0;39m [INFO] com.hexaware.ecommerce.EcommerceProjectApplication [main] Starting EcommerceProjectApplication using Java 17.0.8.1 with PID 10552 (G:\hexa\ecommerce-project\target\classes started by MY in G:\hexa\ecommerce-project)
+[32m2023-11-18 18:00:07.198[0;39m [INFO] com.hexaware.ecommerce.EcommerceProjectApplication [main] No active profile set, falling back to 1 default profile: "default"
+[32m2023-11-18 18:00:10.899[0;39m [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[32m2023-11-18 18:00:11.285[0;39m [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 356 ms. Found 8 JPA repository interfaces.
+[32m2023-11-18 18:00:13.122[0;39m [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8181 (http)
+[32m2023-11-18 18:00:13.145[0;39m [INFO] org.apache.catalina.core.StandardService [main] Starting service [Tomcat]
+[32m2023-11-18 18:00:13.146[0;39m [INFO] org.apache.catalina.core.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/10.1.15]
+[32m2023-11-18 18:00:13.554[0;39m [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [main] Initializing Spring embedded WebApplicationContext
+[32m2023-11-18 18:00:13.556[0;39m [INFO] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 6130 ms
+[32m2023-11-18 18:00:14.177[0;39m [INFO] org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+[32m2023-11-18 18:00:14.334[0;39m [INFO] org.hibernate.Version [main] HHH000412: Hibernate ORM core version 6.2.13.Final
+[32m2023-11-18 18:00:14.341[0;39m [INFO] org.hibernate.cfg.Environment [main] HHH000406: Using bytecode reflection optimizer
+[32m2023-11-18 18:00:15.147[0;39m [INFO] org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo [main] No LoadTimeWeaver setup: ignoring JPA class transformer
+[32m2023-11-18 18:00:15.255[0;39m [INFO] com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+[32m2023-11-18 18:00:16.184[0;39m [INFO] com.zaxxer.hikari.pool.HikariPool [main] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5831989d
+[32m2023-11-18 18:00:16.191[0;39m [INFO] com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+[32m2023-11-18 18:00:20.609[0;39m [INFO] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[32m2023-11-18 18:00:20.823[0;39m [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+[32m2023-11-18 18:00:24.080[0;39m [WARN] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[32m2023-11-18 18:00:25.461[0;39m [INFO] org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [main] Exposing 1 endpoint(s) beneath base path '/actuator'
+[32m2023-11-18 18:00:25.725[0;39m [INFO] org.springframework.security.web.DefaultSecurityFilterChain [main] Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@6419726f, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5d4a1d2c, org.springframework.security.web.context.SecurityContextHolderFilter@e4b9a64, org.springframework.security.web.header.HeaderWriterFilter@2d7b117, org.springframework.security.web.authentication.logout.LogoutFilter@7d45e754, com.hexaware.ecommerce.filter.JwtAuthFilter@6c27be1d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3cdafb82, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7a3c541e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@63f093a, org.springframework.security.web.session.SessionManagementFilter@7c48ea9e, org.springframework.security.web.access.ExceptionTranslationFilter@7cbcd27e, org.springframework.security.web.access.intercept.AuthorizationFilter@1b6441c9]
+[32m2023-11-18 18:00:27.052[0;39m [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8181 (http) with context path ''
+[32m2023-11-18 18:00:27.139[0;39m [INFO] com.hexaware.ecommerce.EcommerceProjectApplication [main] Started EcommerceProjectApplication in 21.131 seconds (process running for 23.908)
+[32m2023-11-18 18:00:27.928[0;39m [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [RMI TCP Connection(3)-127.0.0.1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+[32m2023-11-18 18:00:27.929[0;39m [INFO] org.springframework.web.servlet.DispatcherServlet [RMI TCP Connection(3)-127.0.0.1] Initializing Servlet 'dispatcherServlet'
+[32m2023-11-18 18:00:27.936[0;39m [INFO] org.springframework.web.servlet.DispatcherServlet [RMI TCP Connection(3)-127.0.0.1] Completed initialization in 5 ms
+[32m2023-11-18 18:00:42.219[0;39m [INFO] org.springdoc.api.AbstractOpenApiResource [http-nio-8181-exec-8] Init duration for springdoc-openapi is: 1966 ms
+[32m2023-11-18 18:11:23.431[0;39m [INFO] org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin [RMI TCP Connection(16)-127.0.0.1] Application shutdown requested.
+[32m2023-11-18 18:11:23.452[0;39m [INFO] org.apache.catalina.core.StandardService [RMI TCP Connection(16)-127.0.0.1] Stopping service [Tomcat]
+[32m2023-11-18 18:11:23.455[0;39m [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [RMI TCP Connection(16)-127.0.0.1] Destroying Spring FrameworkServlet 'dispatcherServlet'
+[32m2023-11-18 18:11:23.459[0;39m [WARN] org.apache.catalina.loader.WebappClassLoaderBase [RMI TCP Connection(16)-127.0.0.1] The web application [ROOT] appears to have started a thread named [HikariPool-1 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.8.1/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.8.1/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+ java.base@17.0.8.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1672)
+ java.base@17.0.8.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@17.0.8.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@17.0.8.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+ java.base@17.0.8.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+ java.base@17.0.8.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.8.1/java.lang.Thread.run(Thread.java:833)
+[32m2023-11-18 18:11:23.480[0;39m [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [RMI TCP Connection(16)-127.0.0.1] Closing JPA EntityManagerFactory for persistence unit 'default'
+[32m2023-11-18 18:11:23.486[0;39m [INFO] com.zaxxer.hikari.HikariDataSource [RMI TCP Connection(16)-127.0.0.1] HikariPool-1 - Shutdown initiated...
+[32m2023-11-18 18:11:23.505[0;39m [INFO] com.zaxxer.hikari.HikariDataSource [RMI TCP Connection(16)-127.0.0.1] HikariPool-1 - Shutdown completed.
